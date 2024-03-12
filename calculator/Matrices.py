@@ -1,3 +1,16 @@
+"""
+# Module: matrices
+
+
+## Description: It can perform:
+    1. Addition
+    2. Subtraction
+    3. Multiplication
+    4. Finding inverse
+    5. Finding transpose
+    6. Finding RREF
+"""
+
 import tkinter as tk
 import numpy as np
 import sympy
