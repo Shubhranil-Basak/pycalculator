@@ -1,3 +1,30 @@
+"""
+# Module: graph
+
+
+## Description: It can be used to plot multiple graphs at the same time.
+
+## Supported functions:
+    1. Sin
+    2. Cos
+    3. Tan
+    4. Cot
+    5. Sec
+    6. Cosec
+    7. Cot
+    8. Log
+    9. Exp/e^
+    10. abs/| |
+
+## Constants:
+    1. pi
+    2. e
+
+## Input Format:
+    1. Arguments of a function must be inside paranthesis, example: 'sin x' should be written as 'sin(x)'.
+    2. Just the expression in x or constants, no need to write 'y = '.
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 import re
@@ -30,8 +57,9 @@ def main():
             a = a.replace('log', 'np.log10')
             a = a.replace('ln', 'np.log')
             a = a.replace('e^', 'np.exp')
+            a = a.replace('e', 'np.e')
             a = a.replace('^', '**')
-            a = a.replace('mod', 'np.abs')
+            a = a.replace('abs', 'np.abs')
             a = re.sub(r'(\d)x', r'\1*x', a)
             a = re.sub(r'\|([^|]+)\|', r'np.abs(\1)', a)
 
