@@ -72,9 +72,8 @@ def main():
             a = a.replace('pi', 'sympy.pi')
             a = a.replace('log', 'sympy.log')
             a = a.replace('e^', 'sympy.exp')
-            a = a.replace('e', 'np.e')
             a = a.replace('^', '**')
-            a = a.replace('abs', 'np.abs')
+            a = a.replace('abs', 'sympy.abs')
             a = re.sub(r'(\d)x', r'\1*x', a)
             a = re.sub(r'\|([^|]+)\|', r'sympy.abs(\1)', a)
 
