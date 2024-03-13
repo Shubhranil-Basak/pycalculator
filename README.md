@@ -13,6 +13,6 @@ pip install -r requirements.txt
   2. '^' is eqivalent to "power of function" or '**'.
   3. Absolute value can be found using both `abs()` and `| |`.
   4. Log has default value of base 10 and  cannot be changed for the time being.
-  5. While using functions all the variables and constants should be inside paranthesis. Example, `sin x` should be written as `sin(x)`.
+  5. While using functions all the arguments should be inside paranthesis. Example, `sin x` should be written as `sin(x)`.
   6. Graphs can be plotted only against variable `x`.
   7. No need to write `y = `.
